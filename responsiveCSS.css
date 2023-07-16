@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+:root{
+--Header-Footer:rgb(2, 2, 94);
+--Default-FontColor:antiquewhite;
+--Background--Radiant:radial-gradient(gold, goldenrod);
+}
+@media (perfers-color-scheme: dark) { 
+    :root{--Header-Footer:rgb(41, 41, 49);
+        --Default-FontColor:rgb(150, 150, 150);
+        --Background--Radiant:radial-gradient(rgb(87, 87, 87), rgb(0, 0, 0));
+    
+    
+    
+    }
+    header{
+
+        color: red;
+    }
+    
+    
+                        
+                     }
+*{margin: 0;
+padding: 0;
+box-sizing: border-box;}
+body{
+    min-height: 100vh;
+font:2rem 'Agdasima', sans-serif;
+color: var(--Default-FontColor);
+display: flex;
+flex-direction: column;
+background-image: radial-gradient(red,rgba(63, 11, 11, 0.849));
+}
+header,nav,footer{
+    z-index: 2;
+    display: grid;
+place-content: center;
+}
+header,footer{
+    position: sticky;
+    background-color: var(--Header-Footer);
+}
+main{ margin-top: 2vh;
+    gap: 1vw;
+    flex-wrap: wrap;
+    display: flex;
+    flex-grow: 1;
+place-items: top;
+justify-content: center;
+
+}
+header{top:0;
+}
+footer{bottom:0;
+
+    width: 100vw;
+}
+ul{list-style: none; 
+display: inline-block;}
+li{display: inline-block;
+margin-left: 1em;
+}
+figcaption{text-align: center;}
+
+a{
+    color: white;
+    text-decoration: none;
+    
+    }
+        a:hover{
+            color: lightblue;
+            }
+.cardNav{
+
+    font-size: 4.5vw;
+    background-color: var(--Header-Footer);
+display: none;
+justify-content: space-evenly;
+}
+
+
+.card{
+    width:300px;
+    height:300px;
+    
+    background-color: grey;
+    background-image: url(/img/pattern1.png);
+    
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    gap: px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.425);
+    
+    
+    }
+    .card:hover{
+        background-color: wheat;
+        color:var(--Header-Footer);
+        transition-property: background-color,transform,color;
+        transition-duration:1.2s,1.2s,1.2s;
+        transition-delay: 0.1s;
+        transform:scale(1.1);   
+    }
+    .card:hover img{
+        transition-property:box-shadow,border;
+        transition-duration:1.2s,1.2s;
+        transition-delay: 0.1s;
+        box-shadow: 0px 0px 10px 7px var(--Header-Footer);
+        border: 3px solid var(--Header-Footer);
+    }
+    .card{
+        background-color: grey;
+        color:wheat;
+        transition-property: background-color,transform,color;
+        transition: all 0.6s 0.1s;
+        transform:scale(1);   
+
+
+    }
+    .card img{
+        transition-property:box-shadow,border;
+        transition: all 0.6s 0.1s;
+        box-shadow: 0px 0px 10px 7px var(--Default-FontColor);
+        border: 3px solid var(--Default-FontColor);
+
+
+    }
+
+
+    .card:target{
+        border: 3.5px solid var(--Header-Footer);
+        
+       
+ 
+    }
+    .card:target img{
+        border: 3px solid var(--Header-Footer);
+        box-shadow: 0px 0px 10px 7px var(--Header-Footer);
+       
+ 
+    }
+  
+    
+
+    .card figure img{
+        border: 3px solid var(--Default-FontColor);
+        box-shadow: 0px 0px 10px 7px var(--Default-FontColor);
+        border-radius: 100%;
+       display: flex;
+        justify-content:normal;
+        height: 75%;
+    }
+    .card figure {
+        justify-content: center ;
+    }
+/* small*/
+@media screen and (max-width:719px) {
+   body{
+background-color: olive;
+background-image: radial-gradient(rgb(132, 182, 33),olive);
+   }
+   nav ul{ display: none;}
+    
+}
+/* Medium*/
+@media screen and (min-width:720px) {
+    body{
+ 
+ background-image: var(--Background--Radiant);
+    }
+    nav ul{ display: inline-block;;} }
+/* Large*/
+    @media screen and (min-width:1020px) {
+        body{
+     
+     background-image: var(--Background--Radiant);
+        }
+         }
+/* Mobile Landscape*/
+         @media screen and (max-height:450px) and (min-aspect-ratio:7/4 ) {
+            body{
+         background-color: blue;
+         background-image: radial-gradient(aqua, blue);
+            }
+             }
+/* Nav Bar*/
+             @media screen and (max-width:918px) {
+                body{background-color:  white;}
+                .cardNav{
+display: inline-block;
+
+                }
+                header span{
+                display: none;
+                }
+                 }
+
+               
+                 

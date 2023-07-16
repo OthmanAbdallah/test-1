@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Othman abdallah" />
+    <meta name="viewport" content="widt=device-width, intial-scale=1.0">
+    <meta
+      name="description"
+      content="this page contains all the thing iam learning how to
+    create as i learn html,"
+    />
+
+    <title>My First Web Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap" rel="stylesheet">ful
+    <link rel="icon" href="img/download.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+  <body>
+    <header>
+      <h1>My Goals for the Year</h1>
+      <nav aria-label="Main-Navigation">
+        <ul>
+          <li>
+            <a href="#intro">intro</a>
+          </li>
+          <li>
+            <a href="#Vacation">Vacation</a>
+          </li>
+          <li>
+            <a href="#contact">Contact me</a>
+          </li>
+          <li>
+            <a href="cssExample.html">Css Page</a>
+          </li>
+          <li>
+            <a href="responsive.html">Responsive Css Page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr />
+    <main>
+      <article id="intro">
+        <h2>Iam ready to learn HTML</h2>
+        <p>This is my first web page</p>
+        <img src="img/html.png" alt="we" width="300" height="300" />
+        <h3>my Daily schedule</h3>
+        <p>Let me tell you how:</p>
+        <ol start="5" reversed>
+          <li>...I learn more about web dev.</li>
+          <li>...I plan out my schedule.</li>
+          <li>
+            ...I use resources from
+            <abbr title="Mozilla Developer Network"
+              ><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr
+            >
+          </li>
+        </ol>
+        <aside>
+          <details>
+            <summary>Guess the number of hours i code per day</summary>
+            <p>I Code for <time datetime="PT3H">3 Hours </time>a day</p>
+          </details>
+        </aside>
+        <br />
+
+        <table>
+          <caption>
+            My Daily Schedule
+          </caption>
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th scope="col">Time</th>
+              <th scope="col">Activity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Morning</th>
+              <td>
+                <time datetime="08:00">8 AM</time>-<time datetime="11:00"
+                  >11 AM</time
+                >
+              </td>
+              <td>Write Code</td>
+            </tr>
+            <tr>
+              <th>Break</th>
+              <td>
+                <time datetime="11:00">11 AM</time>-<time datetime="12:00"
+                  >12 PM</time
+                >
+              </td>
+              <td>Lunch</td>
+            </tr>
+            <tr>
+              <th scope="row">Afternoon</th>
+              <td>
+                <time datetime="12:00">12 PM</time>-<time datetime="17:00"
+                  >5 PM</time
+                >
+              </td>
+              <td>Study other Courses</td>
+            </tr>
+            <tr>
+              <th scope="row">Evening</th>
+              <td rowspan="2">All Other Times</td>
+              <td>Free Time</td>
+            </tr>
+            <th scope="row">Night</th>
+            <td>Sleep</td>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3">and thats what i do on a daily basis</td>
+            </tr>
+          </tfoot>
+        </table>
+      </article>
+      <!--comment-->
+      <article id="Vacation">
+        <h2>I Am Also Planning a Vacation</h2>
+        <p>ive been working hard and <em>really need a getaway </em></p>
+        <p>I live in amman so i want to visit a beach.</p>
+        <h3>Place I'd Like to Visit</h3>
+        <ul>
+          <li><p>Ive heard good things about the Caribbean</p></li>
+          <li>
+            <p>Ive heard good things about going here:</p>
+            <address>amman reserve avenue <br /></address>
+            <figure>
+              <img
+                src="img/Amman.jpg"
+                alt="Amman"
+                title="Amman Downtown "
+                width="500"
+              />
+              <figcaption>Amman DownTown</figcaption>
+            </figure>
+            <address>
+              Syria Central Souq 2462<br />
+              <img
+                src="img/SyriaSouq.jpg"
+                alt="SyriaSouq"
+                title="Syrian Souq "
+                width="500"
+                loading="lazy"
+              />
+            </address>
+          </li>
+        </ul>
+
+        <h3>places i want to avoid</h3>
+        <dl>
+          <dt>North Pole</dt>
+          <dd>I hear this is <strong>cold!</strong></dd>
+
+          <dt>South Pole</dt>
+          <dd>I hear this is <strong>very cold!</strong></dd>
+
+          <dt>Mountain Tops</dt>
+          <dd>I hear this is also <strong>cold!</strong></dd>
+        </dl>
+      </article>
+      <hr />
+      <article id="contact">
+        <h2>Contact Me</h2>
+        <p>i'd really like to hear from you</p>
+        <form action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend>Personal Info</legend>
+          <p>
+          <label for="firstName">First Name:</label>
+          <input
+            type="text"
+            name="firstName"
+            id="firstName"
+            placeholder="Othman"
+            autocomplete="on"
+            required
+            autofocus
+          />
+        </p>
+      <p>
+          <label for="lastName">Last Name:</label>
+          <input
+            type="text"
+            name="lastName"
+            id="lastName"
+            placeholder="Abdallah"
+            autocomplete="on"
+            required
+            
+          />
+        </p>
+        <p>
+          <label for="Password">Password:</label>
+          <input
+            type="password"
+            name="Password"
+            id="Password"
+            placeholder="Password"    
+            required
+          />
+        </p>
+        <p>
+          <label for="Phone">Phone:</label>
+          <input
+            type="tel"
+            name="Phone"
+            id="Phone"
+            placeholder="075-5555555"
+            pattern="[0-9]{3}-[0-9]{7}"
+          />
+        </p>
+        <p>
+          <label for="decade">Favorate decade:</label>
+          <input
+            type="number"
+            name="decade"
+            id="decade"
+            min="1950"
+            max="2020"
+            value="2020"
+            step="10"
+          />
+        </p>
+        <p>
+          <label for="Coffee">Favorate Coffee:</label>
+          <select
+            name="Coffee"
+            id="Coffee"
+            value="regular"
+          >
+          <optgroup label="Coffee">
+<option value="regular coffee">Regular Coffee</option>
+<option value="iced coffee">Iced Coffee</option>
+<option value="latte coffee">Latte Coffee</option>
+<option value="arabic coffee">Arabic Coffee</option> </optgroup>
+
+<optgroup label="Tea">
+  <option value="regular tea">Regular Tea</option>
+  <option value="iced tea">Iced Tea</option>
+  <option value="mint tea">Mint Tea</option>
+</optgroup>
+
+          </select>
+        </p>
+        </fieldset>
+<fieldset>
+<legend> Favorate Food</legend>
+<p>
+<input type="radio" name="food" id="tacos" value="tacos">
+<label for="tacos">Tacos</label>
+</p>
+<p>
+  <input type="radio" name="food" id="mansaf" value="mansaf">
+  <label for="mansaf">Mansaf</label>
+  </p>
+  <p>
+    <input type="radio" name="food" id="pizza" value="pizza">
+    <label for="Pizza">Pizza</label>
+    </p>
+</fieldset>
+<fieldset>
+<legend>Do you have pets</legend>
+<p>
+<input type="checkbox" name="pets" id="cat" value="cat">
+<label for="cat">Cat</label>
+</p>
+<p>
+  <input type="checkbox" name="pets" id="dog" value="dog">
+  <label for="dog">Dog</label>
+  </p>
+  <p>
+    <input type="checkbox" name="pets" id="rat" value="rat">
+    <label for="tat">Rat</label>
+    </p>
+    <p>
+      <input type="checkbox" name="pets" id="other" value="other">
+      <label for="other">Other</label>
+      </p>
+</fieldset>
+<fieldset>
+<Legend>Send me a Note</Legend>
+<label for="message">Your Messagel:</label>
+<br>
+<textarea name="message" id="message" cols="30" rows="10"></textarea>
+</fieldset>
+<br>
+<button type="submit">Submit</button>
+<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Submit using post</button>
+<button type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+    <hr />
+    <footer>
+      &lt;&lt;&lt; &copy;
+      <a href="about.html">Othman abdallah </a>&gt;&gt;&gt;
+      <p><a href="#">Back to Top</a></p>
+    </footer>
+  </body>
+  <script src=""></script>
+</html>
